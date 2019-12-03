@@ -85,8 +85,6 @@ def part2():
 
     intersections = set(wire_1).intersection(set(wire_2))
 
-    print(intersections)
-
     fewest_steps = sys.maxsize
 
     for point in intersections:
