@@ -87,7 +87,7 @@ class IntcodeComputer:
             return self.memory[argument.value]
         if argument.mode == Mode.IMMEDIATE:
             return argument.value
-        raise ValueError(f"Unknown mode {mode}.")
+        raise ValueError(f"Unknown mode {argument.mode}.")
 
     def advance(self, distance):
         self.position += distance
